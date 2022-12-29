@@ -1,0 +1,49 @@
+.btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 1;
+    text-align: center;
+    color: $black-color;
+    border-radius: 33px;
+    width: 207px;
+    height: 40px;
+    background: $main-color;
+    border: 3px solid $main-color;
+    transition: all .3s ease-in-out;  
+    text-transform: uppercase;
+    &:hover {
+        background: transparent;
+        color: $white-color;
+    }  
+}
+
+.btn-secondary {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    color: $main-color;
+    border-radius: 17px;
+    width: 392px;
+    height: 33px;
+    background: $black-color;
+    border: 3px solid $main-color;
+    transition: all .3s ease-in-out;  
+    text-transform: uppercase;
+    span {
+        margin-left: 5px;
+        display: flex;
+        align-self: center;
+    }
+    &:hover {
+        color: $white-color;
+    }  
+}

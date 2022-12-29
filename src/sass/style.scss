@@ -1,0 +1,23 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'base/fonts';
+@import 'base/variables';
+* {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+@import 'base/animations';
+@import 'base/sitewrapper';
+
+@import 'blocks/preloader';
+@import 'blocks/menu';
+@import 'blocks/btns';
+@import 'blocks/mainscreen';
+@import 'blocks/slides';
+
+
+@import 'base/media';
+

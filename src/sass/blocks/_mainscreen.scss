@@ -1,0 +1,129 @@
+.mainscreen {
+    overflow-x: hidden;
+    padding: 98px 5% 0 10%;
+    min-height: 1270px;
+    position: relative;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../img/mainscreen/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    z-index: 1;
+    &__decor {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 520px;
+        z-index: 11;
+        img{   
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__onelement {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 1218px;
+        height: 1218px;
+        img{   
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__hamburger {
+        width: 57px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        z-index: 1;
+        &:hover {
+            cursor: pointer;
+        }
+        span {
+            width: 57px;
+            height: 6px;
+            background: $main-color;
+        }
+    }
+    &__wrapper {
+        max-width: 661px;
+        margin-top: 120px;
+        margin-left: 63px;
+        color: $white-color;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-family: 'AllRoundGothic-Book';
+        font-weight: 400;
+        font-size: 63px;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: $white-color;
+            border-radius: 50%;
+        }
+    }
+    &__subtitle {
+        margin-top: 12px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &__description {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    &__btn_margin {
+        margin-top: 9px;
+    }
+    &__scroll {
+        position: relative;
+        width: 103px;
+        height: 174px;
+        border-radius: 66px;
+        background-color: $black-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 208px auto 0 auto;
+        z-index: 111;
+        animation: slide 1.5s infinite;
+        &:hover {
+            cursor: pointer;
+            text-decoration: none;
+        }
+        &-text {
+            font-family: 'AllRoundGothic';
+            font-size: 22px;
+            font-weight: 400;
+            text-align: center;
+            color: $main-color;
+        }
+        &-circle {
+            width: 80px;
+            height: 80px;
+            background: $main-color;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 25px;
+                height: 15px;
+            }
+        }
+    }
+}
